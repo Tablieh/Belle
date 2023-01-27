@@ -8,31 +8,39 @@
     <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Belle</title>
 </head>
 <body>
     <header>
-        <div class="home">
-            <div id="nav" class="nav-flex myElement">
-                <p id="logo">
-                    Belle
-                </p>
-                <ul class="list-nav">
-                    <a href="#HOME">HOME</a>
-                    <a href="#EVENTS">EVENTS</a>
-                    <a href="#STORY">STORY</a>
-                    <a href="#GALLARY">GALLARY</a>
-                    <a href="#CONTACT">CONTACT</a>
-                </ul>
-            </div>
-            <div class="diplay-home">
-                <p class="text-img">Save The Date</p>
-                <div class="text2-img">
-                    <p class="font-home">NEW YORK USA </p>
-                    <p id="font-s">| Joseph & Laura |</p>
-                    <p class="font-home">january 17th 2023 </p>
+        <div class="heart_nav">
+            <a href="javascript:void(0);" class="icon" onclick="navi()">
+                <i class="fa-solid fa-face-kiss-wink-heart"></i>
+              </a>
+                <div class="home topnav">
+                    <div id="nav" class="nav-flex myElement">
+                        <p id="logo">
+                            Belle
+                        </p>
+                        <ul class="list-nav" id="myLinks">
+                            <a href="#HOME">HOME</a>
+                            <a href="#EVENTS">EVENTS</a>
+                            <a href="#STORY">STORY</a>
+                            <a href="#GALLARY">GALLARY</a>
+                            <a href="#CONTACT">CONTACT</a>
+                        </ul>
+                    </div>
+                    <div class="diplay-home">
+                        <p class="text-img">Save The Date</p>
+                        <div class="text2-img">
+                            <p class="font-home">NEW YORK USA </p>
+                            <p id="font-s">| Joseph & Laura |</p>
+                            <p class="font-home">january 17th 2023 </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+        </div>
+           
         </div>
     </header>
     <main>
@@ -76,9 +84,9 @@
             </div>  
         </div>
         <div id="EVENTS" class="event-acc">
-            <p class="gray">OUR SPECAIL EVENTS</p>
-            <p class="black">Wedding events</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vitae sint aliquam aspernatur porro et, suscipit, at praesentium vero cumque aperiam voluptates.</p>
+            <p class="gray mobile-marginEvent">OUR SPECAIL EVENTS</p>
+            <p class="black ">Wedding events</p>
+            <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vitae sint aliquam aspernatur porro et, suscipit, at praesentium vero cumque aperiam voluptates.</p>
             <div class="flex-img-acc">
                 <img class="img-gallary-acc" src="/public/image/gallery-2.jpg" alt="gallery-2">
                 <div class="acc">
@@ -121,9 +129,9 @@
             </div>
         </div>
         <div id="STORY" class="story">
-            <p class="gray">WE LOVE EACH OTHER</p>
-            <p class="black">Our story</p>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="gray mobile-marginStory1">WE LOVE EACH OTHER</p>
+            <p class="black mobile-marginStory">Our story</p>
+            <p class="text mobile-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <div class="felx-story">
                 <div class="story1">
                     <div class="box">
@@ -154,8 +162,146 @@
                 </div>
             </div>
         </div>
+        <div class="gallery" id="GALLARY">
+            <p class="gray">OUR MEMORIES</p>
+            <p class="black mobile-margin">Wedding gallery</p>
+            <p class="text1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rem nemo blanditiis ipsa culpa perferendis officia ducimus animi, autem explicabo sunt suscipit quisquam vero maxime harum illum modi ea nam.</p>
+            <div class="box1-content">
+                <nav id="allimg">
+                    <ul><a class="tous" href="">Tous</a></ul>
+                    <ul><a class="family" href="">Family</a></ul>
+                    <ul><a class="friends" href="">Friends</a></ul>
+                    <ul><a class="party" href="">Party</a></ul>
+                </nav>
+                <div id="content" >
+                    <!--onclick="window.open(this.src)  onclick="swipe(this)"-->
+                    <div class="largeImage friends"  >
+                        <img id="myImg" class="img-box img-fluid"  src="/public/image/gallery-1.jpg" alt="gallery-1" onmouseover="colorgray(this)">
+                    </div>
+                    <div class="largeImage family"  >
+                        <img id="myImg" class="img-box img-box1 img-fluid"  src="/public/image/event1.jpg" alt="event1" onmouseover="colorgray1(this)">
+                    </div>
+                    <div class="largeImage friends"  >
+                        <img id="myImg" class="img-box img-box2 img-fluid"  src="/public/image/gallery-3.jpg" alt="gallery-3" onmouseover="colorgray2(this)">
+                    </div>
+                    <div class="largeImage family"  >
+                        <img id="myImg" class="img-box img-box3 img-fluid"  src="/public/image/gallery-4.jpg" alt="gallery-4" onmouseover="colorgray3(this)">
+                    </div>
+                    <div class="largeImage"  >
+                        <img id="myImg" class="img-box img-box4 img-fluid"  src="/public/image/gallery-5.jpg" alt="gallery-5" onmouseover="colorgray4(this)">
+                    </div>
+                    <div class="largeImage friends"  >
+                        <img id="myImg" class="img-box img-box5 img-fluid"  src="/public/image/gallery-7.jpg" alt="gallery-7" onmouseover="colorgray5(this)">
+                    </div>
+                    <div class="largeImage friends family"  >
+                        <img id="myImg" class="img-box img-box6 img-fluid"  src="/public/image/gallery-8.jpg" alt="gallery-8" onmouseover="colorgray6(this)">
+                    </div>
+                    <div class="largeImage party"  >
+                        <img id="myImg" class="img-box img-box7 img-fluid"  src="/public/image/gallery-9.jpg" alt="gallery-9" onmouseover="colorgray7(this)">
+                    </div>
+                </div>
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img id="modal-img" class="modal-content"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQS2ol73JZj6-IqypxPZXYS3rRiPwKteoD8vezk9QsRdkjt3jEn&usqp=CAU">
+                                
+                            
+                            <div id="caption"></div>
+                        </div>
+            </div>
+        </div>
+        <div class="background " onmouseover="refrech(this)">
+            <div class="content">
+                <div class="value" akhi="100">0</div>
+                <div class="value" akhi="1000">0</div>
+                <div class="value" akhi="200">0</div>
+                <div class="value" akhi="1250">0</div>
+            </div>
+            <div class="CountUp">
+                <div class="raison" >guests</div>
+                <div class="raison1" >kisses</div>
+                <div class="raison2" >sleepless nights</div>
+                <div class="raison3" >days together</div>
+            </div>
+        </div>
+        <div class="best-wishes">
+            <p class="gray">BEST WISHES</p>
+            <p class="black mobile-margin">Friends wishes</p>
+            <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rem nemo blanditiis ipsa culpa perferendis officia ducimus animi, autem explicabo sunt suscipit quisquam vero maxime harum illum modi ea nam.</p>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" >
+                        <div class="friend-3">
+                            <img class="img-slide" src="public/image/friend-3.jpg" alt="friend-3">
+                            <p class="nom">MARIA TAYLOR</p>
+                            <p class="text-slide">"A wedding wish for tow special person:love is best we shared by two. You know that together you are stronger, together you are one. Have a wonderful married life !"</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="friend-1" >
+                            <img class="img-slide" src="public/image/friend-1.jpg" alt="friend-1">
+                            <p class="nom">ANDREW BREWER</p>
+                            <p class="text-slide">"With warm congratulation to a very specail pair. May you alweys find in each other the love, laughter and happiness that only partners in life share !"</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="friend-2">
+                            <img class="img-slide1" src="public/image/friend-2.jpg" alt="friend-2">
+                            <p class="nom">Indian Guy</p>
+                            <p class="text-slide">"love is best action to take when it shared by two. my all best wishes. Have a wonderful married life !"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="CONTACT" class="contact">
+            <p class="gray">HERE WE GO</p>
+            <p class="black">Video invitation</p>
+            <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="contact-flex">
+                <div class="form">
+                    <form>
+                        <h2 class="h2-invitation">Will You be attending to the wedding ?</h2>
+                        <div class="form-content">
+                            <input class="yes" type="button" value="Yes" onclick="changeColorButton(this)">
+                            <input class="no" type="button" value="No" onclick="changeColorButton1(this)">
+                            <input class="name" type="text" name="name" placeholder="Your name *"></input>
+                            <input class="email" type="text" name="email" placeholder="Email *"></input>
+                        </div>
+                        <h2 class="h2-invitation1">Who else is coming with you ?</h2>
+                        <div class="form-content1">
+                            <input class="Guest-name" type="text" name="Guest name" placeholder="Guest name"></input>
+                            <input class="guest" type="button" value="+ Add guest">
+                        </div>
+                       
+                        <button class="submit" type="submit">Submit</button>
+                    </form>
+                </div>
+                <div >
+                    <video class="video-window" autoplay muted loop>
+                        <source src="public/video/Wedding.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer>
+        <p class="footer-text">Just married</p>
+        <p class="footer-text2"> Joseph & Laura </p>
+        <p class="copy-right"><i class="fas fa-copyright"></i> 2017 Wedding. All rights Reserved. Created by FairyTheme</p>
+        <div class="socail-media">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+    
     <button onclick="goup(this)" id="myBtn" ><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="public/js/script.js"></script>
 </body>
 </html>

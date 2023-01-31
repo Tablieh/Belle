@@ -602,13 +602,6 @@ body{
     text-decoration: none;
     cursor: pointer;
   }
-  
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
-    }
-  }
 
 #allimg{
     padding-top: 10px;
@@ -920,6 +913,12 @@ font-family: 'Open Sans';
     width: 100%;
     opacity: 0.9;
 }
+.count1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 10px;
+}
 /* pour les ecran jusqua une largeur de 800px */
 @media screen and (max-width:800px){
     .topnav {
@@ -1019,9 +1018,13 @@ font-family: 'Open Sans';
     }
     .event{
         margin-top: 30px;
-        width: 368px;
+        width: 375px;
+        background-position: center;
+        /*
         background-position-x:right ;
+        
         height: fit-content;
+        */
     }
     .text{
         margin-left: 0;
@@ -1029,27 +1032,33 @@ font-family: 'Open Sans';
     }
     .font-event {
         padding-top: 20;
+        /*
         text-align: start;
+        */
     }
     .font-event1{
+        /*
         text-align: start;
+         */
     }
     .font-event2 ,.font-event3{
+        /*
         text-align: start;
+        */
         width: 375px;
     }
     .font-event4{
-        padding-top: 15px;
+        padding-top: 14px;
     }
-    .count{
-        padding-top: 15px;
-    }
+
     .event-days{
         padding-top: 0px;
     }
     .days-content{
         text-align: center;
-        padding-top: 45px;
+        /*
+        padding-top: 35px;
+        */
         flex-direction: column;
     }
     .acc{
@@ -1117,17 +1126,45 @@ font-family: 'Open Sans';
         width: auto;
         height: 80vh;
         display: flex;
+         /*
         flex-direction: column;
         gap: 15px;
+        */
+        position: relative;
     }
     .content{
+        /*
         align-self: flex-start;
         justify-content: start;
-        gap: 10px;
-        margin: 0;
-        align-items: start;
         padding-top: 250px;
         padding-left: 10px;
+        align-items: start;
+        */
+        flex-direction: column;
+        gap: 65px;
+        margin: 0;
+        
+    }
+    .CountUp{
+        /*
+        align-self: flex-start;
+        justify-content: start;
+        padding-left: 10px;
+        align-items: start;
+        */
+        padding-top: 20px;
+        gap: 72px;
+        margin: 0;
+        flex-direction: column;
+        position: absolute;
+        right: -170;
+    }
+    .modal-content {
+      width: 80%;
+    }
+    .modal{
+        width: 25%;
+        height:18%;
     }
     .value ,.raison,.raison1,.raison2,.raison3{
         margin: 0;
@@ -1136,15 +1173,7 @@ font-family: 'Open Sans';
     .raison,.raison1,.raison2,.raison3{
         margin: 0;
         margin-right: 10px;
-        font-size: 25px;
-    }
-    .CountUp{
-        align-self: flex-start;
-        justify-content: start;
-        gap: 14px;
-        margin: 0;
-        align-items: start;
-        padding-left: 10px;
+        font-size: 35px;
     }
     .gray{
         margin-left: 150px;
@@ -1209,6 +1238,33 @@ font-family: 'Open Sans';
     }
     #myBtn{
         left: 0;
+    }
+    .intro, .font-Sans ,.mobile-txt{
+        padding: 15px;
+    }
+    .event-days{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .count{
+        width: 60px;
+        font-size: 60px;
+        padding-left: -30;
+        padding-top: 1px;
+    }
+    .count1{
+        width:  60px;
+        position: absolute;
+        bottom: 70;
+        right:159;
+        font-size: 19px;
+        font-weight: 500;
+        gap: 50px;
+        
+    }
+    .txt-d{
+        margin-left: 10px;
     }
     /*
     mobile-none*/

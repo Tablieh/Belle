@@ -1207,6 +1207,9 @@ font-family: 'Open Sans';
     .copy-right{
         padding-top: 10px;
     }
+    #myBtn{
+        left: 0;
+    }
     /*
     mobile-none*/
 }
